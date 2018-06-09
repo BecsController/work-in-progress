@@ -1,0 +1,17 @@
+{
+  "name": "App-design",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rebdugnz/work-in-progress.git",
+  "author": "Rebecca Dugdale <bec.dugdale16@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watchAll",
+    "debug": "nodemon --inspect index"
+  },
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "jest": "^23.1.0",
+    "nodemon": "^1.17.5"
+  }
+}
