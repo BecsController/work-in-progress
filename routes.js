@@ -1,22 +1,23 @@
 let express = require('express')
 let router = express.Router()
 const db = require('./db')
-let story = require('./story')
+// let story = require('./story')
 
 //home page
 router.get('/', (req, res) => {
   res.render('home')
 })
 
-router.post('/newProfile', (req, res) => {
+router.post('/new', (req, res) => {
   let newUser = {
     name: req.body.name,
     email: req.body.email,
     avatar: req.body.avatar
   }
   console.log(newUser)
-  db.createUser().then(() => {
-    res.redirect("/users")
+  db.createUser(newUser)
+  .then(() => {
+    res.redirect('/users')
   })
 })
 
