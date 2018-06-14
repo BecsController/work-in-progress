@@ -1,2 +1,26 @@
 
-<h1>Welcome to StoryTime</h1>
+{{> header}}
+
+
+<h2>Let's get started!</h2>
+
+<h2>First lets make a profile</h2>
+
+<form class="userForm" action="/newProfile" method="post">
+  <label>
+    Name
+    <input type="text" placeholder="Enter your name" name="name">
+  </label>
+  <br>
+  <label>
+    Email
+    <input type="text" placeholder="Enter your email" name="email">
+  </label>
+  <br>
+  <label>
+    Avatar
+    <input type="text" placeholder="Insert Image URL" name="avatar">
+  </label>
+  <br>
+  <input type="submit" value="Create Profile">
+</form>
