@@ -1,0 +1,28 @@
+<h1 class="is-size-1 has-text-grey">Profile page of: {{name}}</h1>
+  <br>
+  <div class="box">
+    <div class="box image is-3x3">
+      <img src="{{avatar}}">
+    </div>
+
+<form action="/updateUser" method="post">
+
+  <div class="field">
+    <div class='control'>
+      <input class="input is-medium" name="name" value="{{name}}">
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="control">
+      <input class="input is-medium" name="email" value="{{email}}">
+    </div>
+  </div>
+
+  <input class="button is-info is-medium" type="submit" value="Update Profile">
+
+</form>
+
+  </div>
+
+{{>footer}}

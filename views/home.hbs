@@ -1,26 +1,35 @@
 
-{{> header}}
-
-
-<h2>Let's get started!</h2>
-
-<h2>First lets make a profile</h2>
-
+<div class="column is-5 is-offset-3">
+  <h1 class="is-size-1  is-full-width is-spaced has-text-grey-light">Welcome to StoryTime</h1>
+<div class="box">
+  <div class="box">
+    <figure class="avatar">
+        <img class="image is-148x148" src="http://static.oprah.com/images/201111/omag/200304-omag-book-publish-600x411.jpg">
+    </figure>
+  </div>
+  <h2 class="is-size-3 is-spaced has-text-grey-dark">Let's get started!</h2>
+  <br>
 <form action="/new" method="post">
-  <label>
-    Name
-    <input type="text" placeholder="Enter your name" name="name">
-  </label>
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Enter your name" name="name">
+  </div>
+</div>
   <br>
-  <label>
-    Email
-    <input type="text" placeholder="Enter your email" name="email">
-  </label>
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Enter your email" name="email">
+  </div>
+</div>
   <br>
-  <label>
-    Avatar
-    <input type="text" placeholder="Insert Image URL" name="avatar">
-  </label>
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Insert Image URL" name="avatar">
+  </div>
+</div>
   <br>
-  <input type="submit" value="Create Profile">
+  <input class="button is-info is-medium" type="submit" value="Create Profile">
 </form>
+
+</div>
+</div>

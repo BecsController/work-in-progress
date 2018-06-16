@@ -21,6 +21,14 @@ router.post('/new', (req, res) => {
   })
 })
 
+router.get('/user/:id', (req, res) => {
+  let id = req.params.id
+  db.getUser(id).then(user => {
+    console.log(user)
+    res.render('userpage', user)
+  })
+})
+
 router.get('/users', (req, res) => {
   db.getUsers().then(users => {
     res.render('users', {users})

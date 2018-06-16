@@ -11,7 +11,13 @@ function createUser(newUser) {
   .insert(newUser)
 }
 
+function getUser(id) {
+  return db('users')
+  .where('id', id).first()
+}
+
 module.exports = {
   createUser,
-  getUsers
+  getUsers,
+  getUser
 }

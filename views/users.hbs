@@ -1,7 +1,21 @@
-<ul>
+<h1 class="is-size-1 has-text-grey"> Choose your profile</h1>
+  <br>
+
+<div class="box tile is-ancestor">
+
+  <div class="box tile is-parent">
   {{#each users}}
-  <li>{{name}}</li>
-  <li>{{email}}</li>
-  <li><img src="{{avatar}}"></li>
-  {{/each}}
-</ul>
+    <div class="tile is-child">
+      <a href="/user/{{id}}"><img class="image is-128x128 is-pulled-right" src="{{avatar}}"></a>
+        <p class="has-text-grey-dark has-text-centered">{{name}}</p>
+
+    </div>
+    {{/each}}
+  </div>
+
+</div>
+
+
+//column is-2 is-gapless
+
+{{> footer}}
