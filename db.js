@@ -26,10 +26,16 @@ function getStories () {
   return db('stories').select()
 }
 
+function getStory (id) {
+  return db('stories')
+  .where('id', id).first()
+}
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
   updateUser,
-  getStories
+  getStories,
+  getStory
 }

@@ -52,6 +52,20 @@ router.get('/user/:id', (req, res) => {
   })
 })
 
+router.get('/story/:id', (req, res) => {
+  let id = req.params.id
+  db.getStory(id).then(story => {
+    res.render('stories/homepage', story)
+  })
+})
+
+router.get('/story/:id/page-one', (req, res) => {
+  let id = req.params.id
+  db.getStory(id).then(story => {
+    res.render('stories/school/school-page-one', story)
+  })
+})
+
 router.get('/users', (req, res) => {
   db.getUsers().then(users => {
     res.render('users', {users})
