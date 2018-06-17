@@ -3,6 +3,10 @@
   background-color: white;
 }
 
-img {
-  width: 500px;
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.top-box {
+  margin-top: 20px;
 }

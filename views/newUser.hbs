@@ -1,0 +1,36 @@
+{{> header}}
+
+<div class="column is-5 is-offset-3">
+<div class="box">
+  <h1 class="is-size-1  is-full-width is-spaced has-text-grey-light">Welcome to StoryTime</h1>
+  <div class="box">
+    <figure class="avatar">
+        <img class="image is-148x148" src="http://static.oprah.com/images/201111/omag/200304-omag-book-publish-600x411.jpg">
+    </figure>
+  </div>
+  <h2 class="is-size-3 is-spaced has-text-grey-dark">Let's get started!</h2>
+  <br>
+<form action="/new" method="post">
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Enter your name" name="name">
+  </div>
+</div>
+  <br>
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Enter your email" name="email">
+  </div>
+</div>
+  <br>
+  <div class="field">
+    <div class='control'>
+    <input class="input is-medium" placeholder="Insert Image URL" name="avatar">
+  </div>
+</div>
+  <br>
+  <input class="button is-info is-medium" type="submit" value="Create Profile">
+</form>
+
+</div>
+</div>

@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
   res.render('home')
 })
 
+router.get('/signup', (req, res) => {
+  res.render('newUser')
+})
+
 router.post('/new', (req, res) => {
   let newUser = {
     name: req.body.name,

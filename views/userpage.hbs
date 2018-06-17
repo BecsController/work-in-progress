@@ -1,7 +1,9 @@
-<h1 class="is-size-1 has-text-grey">Profile page of: {{name}}</h1>
-  <br>
-  <div class="box">
-    <div class="box image is-3x3">
+{{> header}}
+
+  <div class="box top-box">
+    <h1 class="is-size-1 has-text-grey">Profile page of: {{name}}</h1>
+    <br>
+    <div class="box profile-pic">
       <img src="{{avatar}}">
     </div>
 
@@ -24,5 +26,3 @@
 </form>
 
   </div>
-
-{{>footer}}

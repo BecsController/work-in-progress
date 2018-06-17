@@ -1,21 +1,30 @@
-<h1 class="is-size-1 has-text-grey"> Choose your profile</h1>
-  <br>
+{{> header}}
 
-<div class="box tile is-ancestor">
+<div class="box top-box">
+  <h1 class="has-text-centered is-size-1 has-text-grey">
+    Choose your profile
+  </h1>
+</div>
 
-  <div class="box tile is-parent">
-  {{#each users}}
-    <div class="tile is-child">
-      <a href="/user/{{id}}"><img class="image is-128x128 is-pulled-right" src="{{avatar}}"></a>
-        <p class="has-text-grey-dark has-text-centered">{{name}}</p>
+<div class="columns">
 
+  <div class="columns is-gapless is-9 is-10-widescreen">
+    <div class="columns is-multiline" id="grid">
+      {{#each users}}
+      <div class="column is-6 is-4-widescreen is-flex">
+        <div class="card">
+          <div class="card-title">
+            <p class="is-4 has-text-grey-dark">{{name}}</p>
+          </div>
+          <div class="card-image">
+              <figure class="image is-128x128">
+            <a href="/user/{{id}}"><img src="{{avatar}}" alt="{{name}}"></a>
+          </figure>
+          </div>
+        </div>
+      </div>
+      {{/each}}
     </div>
-    {{/each}}
   </div>
 
 </div>
-
-
-//column is-2 is-gapless
-
-{{> footer}}
