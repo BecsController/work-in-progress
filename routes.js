@@ -25,6 +25,20 @@ router.post('/new', (req, res) => {
   })
 })
 
+router.post('/updateUser/:id', (req, res) => {
+  let id = req.params.id
+  let updatedInfo = {
+    id: id,
+    name: req.body.name,
+    email: req.body.email,
+    avatar: req.body.avatar
+  }
+  db.updateUser(id, updatedInfo)
+  .then(() => {
+    res.redirect(`/users`)
+  })
+})
+
 router.get('/user/:id', (req, res) => {
   let id = req.params.id
   db.getUser(id).then(user => {

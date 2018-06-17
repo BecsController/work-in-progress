@@ -16,8 +16,15 @@ function getUser(id) {
   .where('id', id).first()
 }
 
+function updateUser(id, updatedInfo) {
+  return db('users')
+  .where('id', id)
+  .update(updatedInfo)
+}
+
 module.exports = {
   createUser,
   getUsers,
-  getUser
+  getUser,
+  updateUser
 }
