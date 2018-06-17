@@ -1,28 +1,48 @@
 {{> header}}
 
   <div class="box top-box">
-    <h1 class="is-size-1 has-text-grey">Profile page of: {{name}}</h1>
+    <h1 class="is-size-1 has-text-grey">{{name}}'s Profile</h1>
     <br>
     <div class="box profile-pic">
       <img src="{{avatar}}">
     </div>
 
+    <h3 class="is-size-3 has-text-grey-dark">My Stories</h3>
+  <div class="column is-3 is-3-widescreen is-flex">
+    <div class="card">
+      <a href="/story/{{story.id}}">
+      <div class="card-title title is-4">
+        <h3 class="has-text-grey-dark">{{title}}</h3>
+      </div>
+    <div class="box card-image">
+          <figure class="image is-1by1">
+            <img src="{{image}}" alt="{{title}}">
+          </figure>
+      </div>
+      </a>
+    </div>
+  </div>
+
+
 <form action="/updateUser/{{id}}" method="post">
 
   <div class="field">
     <div class='control'>
+      <p class="is-size-5 has-text-weight-bold">Current Name </p>
       <input class="input is-medium" name="name" value="{{name}}">
     </div>
   </div>
 
   <div class="field">
     <div class="control">
+      <p class="is-size-5 has-text-weight-bold">Current Email </p>
       <input class="input is-medium" name="email" value="{{email}}">
     </div>
   </div>
 
   <div class="field">
     <div class="control">
+      <p class="is-size-5 has-text-weight-bold">Current Picture</p>
       <input class="input is-medium" name="avatar" value="{{avatar}}">
     </div>
   </div>
