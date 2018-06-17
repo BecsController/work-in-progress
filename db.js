@@ -22,9 +22,14 @@ function updateUser(id, updatedInfo) {
   .update(updatedInfo)
 }
 
+function getStories () {
+  return db('stories').select()
+}
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
-  updateUser
+  updateUser,
+  getStories
 }

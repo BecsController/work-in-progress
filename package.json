@@ -8,7 +8,8 @@
   "scripts": {
     "knex": "knex",
     "test": "jest --watchAll",
-    "debug": "nodemon --inspect index"
+    "debug": "nodemon --inspect index",
+    "db_init": "knex migrate:latest && knex seed:run"
   },
   "dependencies": {
     "bulma": "^0.7.1",
