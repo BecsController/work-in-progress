@@ -9,7 +9,8 @@
     "knex": "knex",
     "test": "jest --watchAll",
     "debug": "nodemon --inspect index",
-    "db_init": "knex migrate:latest && knex seed:run"
+    "db_init": "knex migrate:latest && knex seed:run",
+    "build_sass": "node-sass --output-style expanded --source-map true sass/mystyles.sass css/bulma.css"
   },
   "dependencies": {
     "bulma": "^0.7.1",

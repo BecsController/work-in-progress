@@ -31,11 +31,23 @@ function getStory (id) {
   .where('id', id).first()
 }
 
+function addPageToUserStory (currentPage) {
+  return db('userstories')
+  .insert(currentPage)
+}
+
+function addEmotionToPage (currentEmotion) {
+  return db('pages')
+  
+}
+
 module.exports = {
   createUser,
   getUsers,
   getUser,
   updateUser,
   getStories,
-  getStory
+  getStory,
+  currentPage,
+  addEmotionToPage
 }
