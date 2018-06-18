@@ -10,3 +10,32 @@
 .card-image {
   width: 300px;
 }
+
+.teacher {
+  width: 400px;
+  z-index: 1000;
+  float: left;
+  margin: 20px 0;
+}
+
+.page-template {
+  height: 700px;
+}
+
+.textarea {
+  margin-top: auto;
+  position: absolute;
+  top: 80%;
+}
+
+.page-text {
+  padding: auto 0;
+  text-align: center;
+  bottom: 0px;
+}
+
+.school-bg-img {
+  background: url('/images/backgrounds/inside-a-kindergarten-classroom-background.jpg') no-repeat center;
+  background-size: cover;
+  height: 700px;
+}
