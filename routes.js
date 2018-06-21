@@ -66,6 +66,11 @@ router.get('/story/:id/page-one', (req, res) => {
   })
 })
 
+// router.post('/story/:id/page-one', (req, res) => {
+//   let emotion = req.body.
+//
+// })
+
 router.get('/users', (req, res) => {
   db.getUsers().then(users => {
     res.render('users', {users})
